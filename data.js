@@ -29,6 +29,7 @@ xhr.onreadystatechange = function () {
             // 插入 HTML
             detailDOM.insertAdjacentHTML('beforeend', html);
             if (suicide_note_url == null) {
+                suicide_note_url = "#"
                 // 禁用 .suicide-note
                 document.getElementsByClassName('suicide-note')[i].setAttribute("disabled", "true")
             }
