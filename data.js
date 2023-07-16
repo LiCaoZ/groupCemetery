@@ -11,7 +11,7 @@ xhr.onreadystatechange = function () {
         console.log(data);
         var dataLength = data.length;
         // 解析并渲染数据
-        detailDOM = document.getElementsByClassName("detail");
+        detailDOM = document.querySelector(".detail");
 
         for (var i = 0; i < dataLength; i++) {
             // 拼接 HTML
