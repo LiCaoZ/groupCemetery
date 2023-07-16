@@ -25,7 +25,7 @@ xhr.onreadystatechange = function () {
             var suicide_note_url = data[i].suicide_note_url;
             var html = '<div class="mdui-card mdui-col-xs-12 mdui-col-sm-4"> <div class="mdui-card-header"> <img class="mdui-card-header-avatar" src=' + avatar + ' /> <div class="mdui-card-header-title">' + Name + '</div> <div class="mdui-card-header-subtitle">' + Age + '</div> </div> <div class="mdui-card-content"> <p class="date">在 <span class="date">' + date + '</span> 永远离开了我们</p> </div> <div class="mdui-card-actions"> <a class="mdui-btn mdui-ripple suicide-note" href=" '+ suicide_note_url + '">查阅遗书</a> <button class="mdui-btn mdui-ripple">上一柱香</button> <button class="mdui-btn mdui-float-right">更多</button> </div> </div>';
             // Remove mdui-progress
-            document.getElementsByClassName("mdui-progress").remove();
+            document.querySelector(".mdui-progress").remove();
             // 插入 HTML
             detailDOM.append(html);
             if (suicide_note_url == null) {
